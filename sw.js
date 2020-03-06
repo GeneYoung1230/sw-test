@@ -2,7 +2,7 @@ this.addEventListener('install', function(event) {
   console.log('install');
   console.log(event);
   event.waitUntil(
-    caches.open('v1').then(function(cache) {
+    caches.open('v2').then(function(cache) {
       console.log('v1');
       console.log(cache);
       return cache.addAll([
