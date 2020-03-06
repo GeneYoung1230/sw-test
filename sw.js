@@ -1,10 +1,6 @@
 this.addEventListener('install', function(event) {
-  console.log('install');
-  console.log(event);
   event.waitUntil(
-    caches.open('v2').then(function(cache) {
-      console.log('v1');
-      console.log(cache);
+    caches.open('v3').then(function(cache) {
       return cache.addAll([
         '/sw-test/',
         '/sw-test/index.html',
