@@ -1,8 +1,8 @@
-const expectedCaches = ['static-v3'];
+const expectedCaches = ['static-v4'];
 
 this.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('static-v3').then(function(cache) {
+    caches.open('static-v4').then(function(cache) {
       return cache.addAll([
         '/sw-test/',
         '/sw-test/index.html',
@@ -28,7 +28,7 @@ self.addEventListener('activate', event => {
         )
       )
       .then(() => {
-        console.log('V2 now ready to handle fetches!');
+        console.log('V4 now ready to handle fetches!');
       })
   );
 });
