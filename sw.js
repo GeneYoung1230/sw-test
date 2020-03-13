@@ -1,8 +1,8 @@
-const expectedCaches = ['static-v6'];
+const expectedCaches = ['static-v7'];
 
 this.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('static-v6').then(function(cache) {
+    caches.open('static-v7').then(function(cache) {
       return cache.addAll([
         '/sw-test/',
         '/sw-test/index.html',
