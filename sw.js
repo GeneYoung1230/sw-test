@@ -22,6 +22,7 @@ self.addEventListener('activate', event => {
         Promise.all(
           keys.map(key => {
             if (!expectedCaches.includes(key)) {
+              console.log('[ServiceWorker] Removing old cache', key);
               return caches.delete(key);
             }
           })
