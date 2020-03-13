@@ -1,1 +1,1 @@
-console.log('><v4');
+console.log('><static-v2');
